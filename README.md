@@ -18,6 +18,7 @@ The **Python slackclient** allows interaction with:
 - The Slack web api methods available at our [Api Docs site][api-methods]
 - Interaction with our [RTM API][rtm-docs]
 
+If you want to use our [Events API][events-docs], please check the [Slack Events API adapter for Python][python-slack-events-api]
 
 ![](header.png)
 
@@ -115,3 +116,5 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 [slackclientv1]: https://github.com/slackapi/python-slackclient/
 [api-methods]: https://api.slack.com/methods
 [rtm-docs]: https://api.slack.com/rtm
+[events-docs]: https://api.slack.com/events-apiq
+[python-slack-events-api]: https://github.com/slackapi/python-slack-events-api
