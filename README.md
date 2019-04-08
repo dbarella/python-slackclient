@@ -34,23 +34,24 @@ This Library requires Python 3.6 and above. If you require Python 2, please use 
 ```bash
 python --version
 ```
+We will be using [PipEnv][pipenv] for our examples but if you wish to use pip or similar, you can.
 
 > Note: You may need to use `python3` before your commands to ensure you 
 
 
 ## Installation
 
-We recommend using [PyPI](https://pypi.python.org/pypi) to install Slack Developer Kit for Python.
+We recommend using [PyPI][pypi] to install Slack Developer Kit for Python as well as [PipEnv][pipenv]
 
 
 ```bash
-pip3 install slackclient
+pipenv install --python 3.6 slackclient
 ```
 
 If you require Python 2 support, you can use the following to install the previous version of our Developer Kit
 
 ```bash
-pip install slackclient==1.3.1
+pipenv install --python 2.6 slackclient==1.3.1
 ```
 
 
@@ -69,7 +70,10 @@ make install
 npm test
 ```
 
-## Release History
+<details>
+  <summary><strong>Release History</strong> (click to expand)</summary>
+
+<!-- rel -->
 
 * 0.2.1
     * CHANGE: Update docs (module code remains unchanged)
@@ -83,6 +87,10 @@ npm test
     * CHANGE: Rename `foo()` to `bar()`
 * 0.0.1
     * Work in progress
+<!-- relstop -->
+
+
+</details>
 
 ## Meta
 
@@ -118,3 +126,5 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 [rtm-docs]: https://api.slack.com/rtm
 [events-docs]: https://api.slack.com/events-apiq
 [python-slack-events-api]: https://github.com/slackapi/python-slack-events-api
+[pypi]: https://pypi.python.org/pypi
+[pipenv]: https://pypi.org/project/pipenv/
