@@ -7,11 +7,11 @@ class User(object):
         self.id = user_id
         self.email = email
 
-    def __eq__(self, compare_str):
-        if compare_str in (self.id, self.name):
-            return True
+    def __eq__(self, other):
+        if isinstance(other, type(self)):
+            return other in (self.id, self.name):
         else:
-            return False
+            return NotImplemented
 
     def __hash__(self):
         return hash(self.id)
